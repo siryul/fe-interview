@@ -2,6 +2,8 @@
 
 [浏览器面试题汇总](./浏览器面试题汇总.md)
 
+[javascript 面试题汇总](./javascript 面试题汇总.md)
+
 [CSS面试题汇总](./CSS面试题汇总.md)
 
 [Promise面试题归总](./Promise面试题归总.md)

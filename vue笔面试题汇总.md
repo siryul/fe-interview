@@ -722,7 +722,7 @@
 >
 > computed 缓存原理：
 >
-> conputed本质是一个惰性的观察者；当计算数据存在于 data 或者 props里时会被警告；
+> computed本质是一个惰性的观察者；当计算数据存在于 data 或者 props里时会被警告；
 >
 > vue 初次运行会对 computed 属性做初始化处理（initComputed），初始化的时候会对每一个 computed 属性用 watcher 包装起来 ，这里面会生成一个 dirty 属性值为 true；然后执行 defineComputed 函数来计算，计算之后会将 dirty 值变为 false，这里会根据 dirty 值来判断是否需要重新计算；如果属性依赖的数据发生变化，computed 的 watcher 会把 dirty 变为 true，这样就会重新计算 computed 属性的值。
 
